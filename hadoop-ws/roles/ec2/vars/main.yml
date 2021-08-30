@@ -1,0 +1,18 @@
+---
+# vars file for ec2
+instance_tag:
+        - hadoop_master
+        - hadoop_slave1
+        - hadoop_slave2
+        - hadoop_client
+
+python_pkgs:
+        - boto
+        - boto3
+
+sg_name: Allow_All_SG
+region_name: ap-south-1
+subnet_name: subnet-6dfdc705
+ami_id: ami-0bcf5425cdc1d8a85
+keypair: hadoop_instance
+instance_flavour: t2.micro
